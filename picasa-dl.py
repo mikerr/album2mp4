@@ -6,7 +6,7 @@ def main():
   gd_client = gdata.photos.service.PhotosService()
   username = raw_input("Username ")
   password = raw_input("Password ")
-  gd_client.ClientLogin(username,password);
+  gd_client.ClientLogin(username,password); # not needed for public photos
   print_album_names(gd_client, username) # Enumerate the albums owned by that account.
   album_id = raw_input("Album ID? ") # Prompt for an album ID.
   download_album(gd_client, username, album_id) # Download the corresponding album!
