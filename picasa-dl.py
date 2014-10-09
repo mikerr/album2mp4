@@ -4,8 +4,8 @@ import urllib
 def main():
   "Downloads a Picasa Web Album of the user's choice to the current directory."
   gd_client = gdata.photos.service.PhotosService()
-  username = "anneredrobe"
-  password = "picasso55";
+  username = raw_input("Username ")
+  password = raw_input("Password ")
   gd_client.ClientLogin(username,password);
   print_album_names(gd_client, username) # Enumerate the albums owned by that account.
   album_id = raw_input("Album ID? ") # Prompt for an album ID.
