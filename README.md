@@ -1,3 +1,7 @@
+Album2mp4
+--------------
+Scripts to download and convert an album of photos to mp4
+
 PreRequisites
 --------------
 
